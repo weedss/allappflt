@@ -207,29 +207,29 @@ class _OnboardingState extends State<Onboarding> {
           ),
         ),
       ),
-      // bottomSheet: _currentPage == _numPages - 1
-      //     ? Container(
-      //         height: 100.0,
-      //         width: double.infinity,
-      //         color: Colors.white,
-      //         child: GestureDetector(
-      //           onTap: () => print('Get started'),
-      //           child: Center(
-      //             child: Padding(
-      //               padding: EdgeInsets.only(bottom: 30.0),
-      //               child: Text(
-      //                 'Get started',
-      //                 style: TextStyle(
-      //                   color: Color(0xFF5B16D0),
-      //                   fontSize: 20.0,
-      //                   fontWeight: FontWeight.bold,
-      //                 ),
-      //               ),
-      //             ),
-      //           ),
-      //         ),
-      //       )
-      //     : Text(''),
+      bottomSheet: _currentPage == _numPages - 1
+          ? Container(
+              height: 100.0,
+              width: double.infinity,
+              color: Colors.white,
+              child: GestureDetector(
+                onTap: () => print('Get started'),
+                child: Center(
+                  child: Padding(
+                    padding: EdgeInsets.only(bottom: 30.0),
+                    child: Text(
+                      'Get started',
+                      style: TextStyle(
+                        color: Color(0xFF5B16D0),
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            )
+          : Text(''),
     );
   }
 }
